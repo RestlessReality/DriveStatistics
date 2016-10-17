@@ -1,3 +1,8 @@
+# Gradle #
+##########
+.gradle
+!gradle-wrapper.jar
+
 # Compiled source #
 ###################
 *.com
