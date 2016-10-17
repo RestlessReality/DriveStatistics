@@ -1,4 +1,4 @@
-package dataTypes;
+package it.haskellis.drivestatistics.dataTypes;
 
 /**
  * DataType class for the time in and number of driving-phases with a speed over a threshold

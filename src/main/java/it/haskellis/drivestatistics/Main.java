@@ -1,13 +1,15 @@
-import calculationLogic.BasicDriveCalculations;
-import dataReceiving.SpeedsReader;
-import dataTypes.PhasesOverThreshold;
+package it.haskellis.drivestatistics;
+
+import it.haskellis.drivestatistics.calculationLogic.BasicDriveCalculations;
+import it.haskellis.drivestatistics.dataReceiving.SpeedsReader;
+import it.haskellis.drivestatistics.dataTypes.PhasesOverThreshold;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.List;
 
 /**
  * Main class
- * Todo Versionierung, unit-tests
+ * Todo unit-tests
  * ToDo Assumption: First speed is after 1 second, not at 0 seconds.
  */
 public class Main {
@@ -26,7 +28,7 @@ public class Main {
            System.out.println("Maximal speed during the drive: " + calculator.getMaxSpeed(speeds));
            System.out.println("Average speed: " + calculator.getAverageSpeed(speeds));
            PhasesOverThreshold phasesOverThreshold = calculator.getPhasesOverThreshold(speeds, 100.0);
-           System.out.println("Driving time over 100 km/h: " + phasesOverThreshold.getTimeOverThreshold());
+           System.out.println("Driving time over 100 km/h in minutes: " + phasesOverThreshold.getTimeOverThreshold());
            System.out.println("Number of driving-phases over 100 km/h: " + phasesOverThreshold.getCountPhasesOverThreshold());
        }
 

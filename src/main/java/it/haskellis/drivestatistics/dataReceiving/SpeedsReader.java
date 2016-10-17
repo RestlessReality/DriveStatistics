@@ -1,4 +1,4 @@
-package dataReceiving;
+package it.haskellis.drivestatistics.dataReceiving;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * This class reads the input from the user, converts and checks it.
+ * Class reads the input from the user, converts and checks it.
  */
 public class SpeedsReader {
     /**

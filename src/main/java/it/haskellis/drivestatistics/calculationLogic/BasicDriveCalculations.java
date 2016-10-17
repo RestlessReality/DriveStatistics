@@ -1,13 +1,13 @@
-package calculationLogic;
+package it.haskellis.drivestatistics.calculationLogic;
 
-import dataTypes.PhasesOverThreshold;
+import it.haskellis.drivestatistics.dataTypes.PhasesOverThreshold;
 import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.Collections;
 import java.util.List;
 
 /**
- * This class provides methods which do calculations on given Lists of speeds.
+ * Class provides methods which do calculations on given Lists of speeds.
  */
 public class BasicDriveCalculations {
 
